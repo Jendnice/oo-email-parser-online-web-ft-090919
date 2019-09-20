@@ -9,9 +9,10 @@ class EmailAddressParser
   def initialize(emails)
     @emails = emails 
     def parse 
-      array = emails.split(",")
+      array = @emails.split(",")
       new_string = array.join(" ")
       list = new_string.split(" ")
+    end 
   end 
   
 end 
