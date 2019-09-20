@@ -9,7 +9,8 @@ class EmailAddressParser
   def initialize(emails)
     @emails = emails 
     def parse 
-      emails.split(" ")(",")
+      split_space = emails.split(" ")
+      split_comma = split_space.split(", ")
   end 
   
 end 
