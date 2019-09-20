@@ -12,6 +12,7 @@ class EmailAddressParser
       array = @emails.split(",")
       new_string = array.join(" ")
       list = new_string.split(" ")
+      list.uniq 
     end 
   end 
   
