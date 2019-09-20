@@ -11,11 +11,12 @@ class EmailAddressParser
   end 
   
   def parse 
-      array = @emails.split(",")
-      new_string = array.join(" ")
-      list = new_string.split(" ")
-      list.uniq 
+     @emails.split(",").join(" ").split(" ").uniq 
+      # array = @emails.split(",")
+      # new_string = array.join(" ")
+      # list = new_string.split(" ")
+      # list.uniq 
     end 
     
-    @emails.split(",").join(" ").split(" ").uniq 
+   
 end 
