@@ -8,12 +8,18 @@ class EmailAddressParser
   
   def initialize(emails)
     @emails = emails 
-    def parse 
+    # def parse 
+    #   array = @emails.split(",")
+    #   new_string = array.join(" ")
+    #   list = new_string.split(" ")
+    #   list.uniq 
+    # end 
+  end 
+  
+  def parse 
       array = @emails.split(",")
       new_string = array.join(" ")
       list = new_string.split(" ")
       list.uniq 
     end 
-  end 
-  
 end 
